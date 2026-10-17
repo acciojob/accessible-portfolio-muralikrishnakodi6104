@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- 1. Fixed the invalid <heading> tag and added the heading role -->
-<h1 class="heading">Your Page Title</h1>
+	<nav role="navigation">
+		<ul role="list">
+			<li role="listitem"><a href="#about">About</a></li>
+			<li role="listitem"><a href="#projects">Projects</a></li>
+			<li role="listitem"><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-<!-- 2. Added the navigation role -->
-<nav class="navigation">
-  
-  <!-- 3. Added the list role -->
-  <ul class="list">
-    <!-- 4. Added the listitem role to each li -->
-    <li class="listitem"><a href="#home">Home</a></li>
-    <li class="listitem"><a href="#about">About</a></li>
-  </ul>
-</nav>
+	<main>
+		<h1 role="heading">Welcome to My Portfolio</h1>
+		
+		<img role="img" src="https://gstatic.com" alt="An African bush elephant coated in red soil walking through a dry grassy savanna field">
+		
+		<p>Hello! I am a passionate web developer focused on building inclusive, fully semantic, and highly accessible user interfaces for everyone.</p>
 
-<!-- 5. Added the img role (keeping your passing alt attribute) -->
-<img src="logo.png" alt="Company Logo" role="img">
-
-
-	<!-- Fixed script tag alignment -->
-	<script type="text/javascript" src="./script.js"></script>
+		<h2 role="heading">My Core Skills</h2>
+		<ul role="list">
+			<li role="listitem">Semantic HTML5 & WAI-ARIA implementation</li>
+			<li role="listitem">Responsive Web Design with CSS</li>
+			<li role="listitem">Accessible JavaScript interfaces</li>
+		</ul>
+	</main>
 
 </body>
 </html>
